@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg-main: #E9E8F8;       /* Lavanda Suave */
+  --color-surface: #FFFFFF;       /* Branco Suave */
+  --color-primary: #8DB9F0;       /* Azul Celeste Principal */
+  --color-accent: #F5B69E;        /* Pêssego Pastel */
+  --color-text-main: #1E293B;     /* Texto Escuro Legível */
+  --color-border: #D8D7EE;        /* Lavanda Sutil */
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #E9E8F8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8DB9F0;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7AA7DE;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #E9E8F8;
+  color: #1E293B;
+  overflow-x: hidden;
+}

@@ -17,7 +17,8 @@ ReVeste/
     ├── briefing.md                     # 📄 01. Briefing Oficial do Projeto Integrador
     ├── funcionalidades.md              # 💡 02. Especificação Completa das 54 Funcionalidades
     ├── arquitetura-e-fluxos.md         # 📐 03. Diagramas de Fluxo e Arquitetura Transacional
-    └── modelagem-dados.md              # 🗄️ 04. Modelagem do Banco de Dados e Dicionário
+    ├── modelagem-dados.md              # 🗄️ 04. Modelagem do Banco de Dados e Dicionário
+    └── design-system.md                # 🎨 05. Design System, Tokens de Cor e Acessibilidade
 ```
 
 ---
@@ -30,6 +31,8 @@ ReVeste/
 | [💡 **02. Especificação de Funcionalidades**](./funcionalidades.md) | **Requisitos & Regras de Negócio** | • Detalhamento de todos os módulos (Cliente, Vendedor, Admin, BI)<br>• Regras da "Sacolinha" (consolidação de frete até 30 dias)<br>• Provador Virtual com medidas reais em centímetros<br>• Matriz completa consolidada com **54 funcionalidades** |
 | [📐 **03. Arquitetura e Fluxos**](./arquitetura-e-fluxos.md) | **Engenharia & Diagramas** | • Diagrama do Mecanismo de Reserva com Timer (Anti-Overselling)<br>• Fluxo transacional da "Sacolinha"<br>• Ciclo de vida da peça física de brechó (estados)<br>• Fluxo de custódia financeira (*Escrow*) |
 | [🗄️ **04. Modelagem de Dados**](./modelagem-dados.md) | **Persistência & Auditoria** | • Diagrama Entidade-Relacionamento (DER Mermaid)<br>• Dicionário de dados relacional normalizado (PostgreSQL / MySQL)<br>• Trilha de auditoria imutável (*Audit Logs*) com histórico de alterações |
+| [🎨 **05. Design System & Tokens**](./design-system.md) | **Identidade Visual & UI/UX** | • Paleta oficial de tokens com proporção 60-30-10<br>• Conformidade de contraste WCAG (11.8:1 botão primário)<br>• Variáveis CSS (`:root`) e configuração do Tailwind CSS<br>• Padrões de componentes (Cards de peça única, botões e tags) |
+
 
 ---
 

@@ -31,3 +31,5 @@ A documentação completa e organizada do projeto está centralizada na pasta [`
 - 💡 [**02. Especificação Completa de Funcionalidades**](./docs/funcionalidades.md): Detalhamento dos módulos (Cliente, Vendedor, Admin e BI), regras de negócio da "Sacolinha", Provador Virtual e checklist com 54 funcionalidades.
 - 📐 [**03. Arquitetura e Fluxos Transacionais**](./docs/arquitetura-e-fluxos.md): Diagramas de sequência Mermaid para reserva de peça única (Anti-Overselling), ciclo de vida da roupa e custódia segura (*Escrow*).
 - 🗄️ [**04. Modelagem do Banco de Dados**](./docs/modelagem-dados.md): Diagrama Entidade-Relacionamento (DER), dicionário de dados (PostgreSQL/MySQL) e trilha de auditoria (*Audit Logs*).
+- 🎨 [**05. Design System & Identidade Visual**](./docs/design-system.md): Paleta de cores oficial (regra 60-30-10), tokens de design (CSS/Tailwind), acessibilidade WCAG e padrões de componentes.
+
