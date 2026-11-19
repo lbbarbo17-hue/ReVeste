@@ -10,7 +10,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 180,
     originalPrice: 390,
     size: 'M',
-    condition: 'Excelente / Sem Marcas',
+    condition: 'Perfeito Estado',
     colorName: 'Marrom Caramelo',
     colorHex: '#6F4E37',
     brand: 'Curadoria 90s',
@@ -33,11 +33,14 @@ export const MOCK_PRODUCTS: Product[] = [
     },
     seller: {
       name: 'Mariana Garimpos',
+      handle: '@mariana_garimpos',
       city: 'São Paulo',
       state: 'SP',
       rating: 4.9,
-      salesCount: 84
+      salesCount: 84,
+      verified: true
     },
+    styleVibe: 'Alfaiataria Chic',
     isAvailable: true
   },
   {
@@ -49,7 +52,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 285,
     originalPrice: 520,
     size: 'G',
-    condition: 'Vintage Curado',
+    condition: 'Vintage',
     colorName: 'Azul Jeans',
     colorHex: '#3b82f6',
     brand: "Levi's Vintage",
@@ -73,11 +76,14 @@ export const MOCK_PRODUCTS: Product[] = [
     },
     seller: {
       name: 'Brechó Acervo Retrô',
+      handle: '@acervo_retro',
       city: 'Curitiba',
       state: 'PR',
       rating: 5.0,
-      salesCount: 142
+      salesCount: 142,
+      verified: true
     },
+    styleVibe: 'Streetwear & Denim',
     isAvailable: true
   },
   {
@@ -89,7 +95,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 85,
     originalPrice: 240,
     size: 'Único',
-    condition: 'Excelente / Sem Marcas',
+    condition: 'Perfeito Estado',
     colorName: 'Creme & Caramelo',
     colorHex: '#C49A6C',
     brand: 'Artesanal Nordeste',
@@ -100,7 +106,7 @@ export const MOCK_PRODUCTS: Product[] = [
     composition: 'Palha de Fibra Natural & Couro Bovino',
     measurements: {
       length: 32,
-      waist: 40 // largura
+      waist: 40
     },
     ecoImpact: {
       waterSavedLiters: 1800,
@@ -108,11 +114,14 @@ export const MOCK_PRODUCTS: Product[] = [
     },
     seller: {
       name: 'Clara Desapegos',
+      handle: '@clara_desapegos',
       city: 'Belo Horizonte',
       state: 'MG',
       rating: 4.8,
-      salesCount: 37
+      salesCount: 37,
+      verified: true
     },
+    styleVibe: 'Minimalista & Linho',
     isAvailable: true
   },
   {
@@ -145,11 +154,14 @@ export const MOCK_PRODUCTS: Product[] = [
     },
     seller: {
       name: 'Juliana Pires',
+      handle: '@juliana_pires',
       city: 'Rio de Janeiro',
       state: 'RJ',
       rating: 4.9,
-      salesCount: 56
+      salesCount: 56,
+      verified: true
     },
+    styleVibe: 'Y2K & Retrô',
     isAvailable: true
   },
   {
@@ -161,7 +173,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 195,
     originalPrice: 780,
     size: 'M',
-    condition: 'Excelente / Sem Marcas',
+    condition: 'Perfeito Estado',
     colorName: 'Bege Areia',
     colorHex: '#D2B48C',
     brand: 'Burberrys Vintage',
@@ -183,11 +195,14 @@ export const MOCK_PRODUCTS: Product[] = [
     },
     seller: {
       name: 'Sofia Curadoria',
+      handle: '@sofia_curadoria',
       city: 'Porto Alegre',
       state: 'RS',
       rating: 5.0,
-      salesCount: 198
+      salesCount: 198,
+      verified: true
     },
+    styleVibe: 'Alfaiataria Chic',
     isAvailable: true
   },
   {
@@ -199,7 +214,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 55,
     originalPrice: 140,
     size: 'P',
-    condition: 'Excelente / Sem Marcas',
+    condition: 'Gentilmente Usado',
     colorName: 'Amarelo Mostarda',
     colorHex: '#eab308',
     brand: 'Osklen Vintage',
@@ -220,11 +235,14 @@ export const MOCK_PRODUCTS: Product[] = [
     },
     seller: {
       name: 'Gabriel Desapega',
+      handle: '@gabriel_desapega',
       city: 'São Paulo',
       state: 'SP',
       rating: 4.7,
-      salesCount: 29
+      salesCount: 29,
+      verified: false
     },
+    styleVibe: 'Minimalista & Linho',
     isAvailable: true
   },
   {
@@ -236,7 +254,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 105,
     originalPrice: 320,
     size: 'G',
-    condition: 'Excelente / Sem Marcas',
+    condition: 'Perfeito Estado',
     colorName: 'Cinza Mescla',
     colorHex: '#9ca3af',
     brand: 'Linho & Fio',
@@ -257,11 +275,14 @@ export const MOCK_PRODUCTS: Product[] = [
     },
     seller: {
       name: 'Beatriz Brechó',
+      handle: '@beatriz_brecho',
       city: 'Florianópolis',
       state: 'SC',
       rating: 4.9,
-      salesCount: 77
+      salesCount: 77,
+      verified: true
     },
+    styleVibe: 'Minimalista & Linho',
     isAvailable: true
   },
   {
@@ -282,7 +303,7 @@ export const MOCK_PRODUCTS: Product[] = [
     description: 'Armação circular metálica com proteções laterais vintage e lentes pretas com proteção UV400 testada em laboratório.',
     composition: 'Metal Anticorrosivo e Acetato',
     measurements: {
-      length: 14 // largura frontal
+      length: 14
     },
     ecoImpact: {
       waterSavedLiters: 950,
@@ -290,11 +311,14 @@ export const MOCK_PRODUCTS: Product[] = [
     },
     seller: {
       name: 'Mariana Garimpos',
+      handle: '@mariana_garimpos',
       city: 'São Paulo',
       state: 'SP',
       rating: 4.9,
-      salesCount: 84
+      salesCount: 84,
+      verified: true
     },
+    styleVibe: 'Y2K & Retrô',
     isAvailable: true
   },
   {
@@ -306,7 +330,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 230,
     originalPrice: 650,
     size: 'M',
-    condition: 'Vintage Curado',
+    condition: 'Vintage',
     colorName: 'Floral Multicolor',
     colorHex: '#8FA893',
     brand: 'Ateliê Tapeçaria 80s',
@@ -327,11 +351,14 @@ export const MOCK_PRODUCTS: Product[] = [
     },
     seller: {
       name: 'Brechó Acervo Retrô',
+      handle: '@acervo_retro',
       city: 'Curitiba',
       state: 'PR',
       rating: 5.0,
-      salesCount: 142
+      salesCount: 142,
+      verified: true
     },
+    styleVibe: 'Cottagecore & Romântico',
     isAvailable: true
   },
   {
@@ -342,8 +369,8 @@ export const MOCK_PRODUCTS: Product[] = [
     categoryKey: 'shoes',
     price: 199,
     originalPrice: 480,
-    size: 'G', // equivalente ao 39/40
-    condition: 'Excelente / Sem Marcas',
+    size: '40',
+    condition: 'Perfeito Estado',
     colorName: 'Bege & Fendi',
     colorHex: '#F0EBE0',
     brand: 'New Balance Heritage',
@@ -352,7 +379,7 @@ export const MOCK_PRODUCTS: Product[] = [
     description: 'Tênis clássico em camurça genuína com solado tratorado antiderrapante. Higienizado e impermeabilizado com cera natural.',
     composition: 'Camurça Natural e Borracha Vulcanizada',
     measurements: {
-      length: 26 // 26cm de palmilha
+      length: 26
     },
     ecoImpact: {
       waterSavedLiters: 5200,
@@ -360,11 +387,14 @@ export const MOCK_PRODUCTS: Product[] = [
     },
     seller: {
       name: 'Sneakers & Desapegos',
+      handle: '@sneakers_desapegos',
       city: 'Santos',
       state: 'SP',
       rating: 4.8,
-      salesCount: 63
+      salesCount: 63,
+      verified: true
     },
+    styleVibe: 'Streetwear & Denim',
     isAvailable: true
   },
   {
@@ -376,7 +406,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 85,
     originalPrice: 280,
     size: 'P',
-    condition: 'Excelente / Sem Marcas',
+    condition: 'Perfeito Estado',
     colorName: 'Terracota Floral',
     colorHex: '#C96A4B',
     brand: 'Farm Rio Desapego',
@@ -397,11 +427,14 @@ export const MOCK_PRODUCTS: Product[] = [
     },
     seller: {
       name: 'Camila Vintage',
+      handle: '@camila_vintage',
       city: 'Campinas',
       state: 'SP',
       rating: 4.9,
-      salesCount: 45
+      salesCount: 45,
+      verified: true
     },
+    styleVibe: 'Cottagecore & Romântico',
     isAvailable: true
   },
   {
@@ -413,7 +446,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 129,
     originalPrice: 340,
     size: 'M',
-    condition: 'Excelente / Sem Marcas',
+    condition: 'Gentilmente Usado',
     colorName: 'Creme Natural',
     colorHex: '#FAF7F0',
     brand: 'Linho Puro Ateliê',
@@ -434,11 +467,14 @@ export const MOCK_PRODUCTS: Product[] = [
     },
     seller: {
       name: 'Mariana Garimpos',
+      handle: '@mariana_garimpos',
       city: 'São Paulo',
       state: 'SP',
       rating: 4.9,
-      salesCount: 84
+      salesCount: 84,
+      verified: true
     },
+    styleVibe: 'Minimalista & Linho',
     isAvailable: true
   }
 ];
@@ -454,7 +490,24 @@ export const CATEGORIES_DATA = [
   { key: 'shoes', label: 'Calçados', count: 8 },
 ];
 
-export const SIZES_DATA: Product['size'][] = ['PP', 'P', 'M', 'G', 'GG', 'XGG'];
+export const SIZES_DATA = ['PP', 'P', 'M', 'G', 'GG', 'XGG'];
+
+export const NUMERIC_SIZES_DATA = ['34', '36', '38', '40', '42', '44', '46'];
+
+export const CONDITIONS_DATA = [
+  'Novo com Etiqueta',
+  'Perfeito Estado',
+  'Gentilmente Usado',
+  'Vintage'
+];
+
+export const STYLES_DATA = [
+  'Y2K & Retrô',
+  'Alfaiataria Chic',
+  'Streetwear & Denim',
+  'Minimalista & Linho',
+  'Cottagecore & Romântico'
+];
 
 export const COLORS_DATA = [
   { name: 'Lavanda', hex: '#E9E8F8', border: true },
@@ -478,3 +531,16 @@ export const BRANDS_DATA = [
   'New Balance Heritage',
   'Osklen Vintage'
 ];
+
+export const SEARCH_SUGGESTIONS = [
+  'Jaqueta Jeans Vintage',
+  'Colete Corset Alfaiataria',
+  'Camisa Linho Puro',
+  'Vestido Floral Midi',
+  'Trench Coat Bege',
+  'Bolsa Palha Natural',
+  'Sneakers Camurça Retrô',
+  'Óculos Steampunk',
+  'Moletom Confort Rosa'
+];
+

@@ -6,7 +6,9 @@ import { ChevronLeft, ChevronRight, PackageSearch } from 'lucide-react';
 interface ProductGridProps {
   products: Product[];
   cartItemsIds: Set<string>;
+  favoritesIds?: Set<string>;
   onAddToCart: (product: Product) => void;
+  onToggleFavorite?: (product: Product) => void;
   onOpenFitting: (product: Product) => void;
   onViewDetails: (product: Product) => void;
   currentPage: number;
@@ -18,7 +20,9 @@ interface ProductGridProps {
 export const ProductGrid: React.FC<ProductGridProps> = ({
   products,
   cartItemsIds,
+  favoritesIds,
   onAddToCart,
+  onToggleFavorite,
   onOpenFitting,
   onViewDetails,
   currentPage,
@@ -36,7 +40,7 @@ export const ProductGrid: React.FC<ProductGridProps> = ({
           Nenhum garimpo encontrado
         </h4>
         <p className="text-sm text-[#1E293B]/70 max-w-md mx-auto mb-6 font-medium">
-          Tente ajustar os filtros de categoria, faixa de preço, tamanho ou marca para encontrar outras peças únicas do brechó.
+          Tente ajustar os filtros de categoria, faixa de preço, tamanho, conservação ou estilo para encontrar outras peças únicas do brechó.
         </p>
         <button
           onClick={onResetFilters}
@@ -51,21 +55,23 @@ export const ProductGrid: React.FC<ProductGridProps> = ({
   return (
     <div className="space-y-10">
       
-      {/* Grid de 3 Colunas no Desktop */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {/* Grid: 3 Colunas no Desktop, 2 Colunas no Tablet, 1-2 Colunas no Mobile */}
+      <div className="grid grid-cols-1 min-[480px]:grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
         {products.map((product) => (
           <ProductCard
             key={product.id}
             product={product}
             isInCart={cartItemsIds.has(product.id)}
+            isFavorite={favoritesIds ? favoritesIds.has(product.id) : false}
             onAddToCart={onAddToCart}
+            onToggleFavorite={onToggleFavorite}
             onOpenFitting={onOpenFitting}
             onViewDetails={onViewDetails}
           />
         ))}
       </div>
 
-      {/* Paginação Estilizada Idêntica à Referência (< 01 [02] 03 >) com Azul Celeste #8DB9F0 */}
+      {/* Paginação Estilizada (< 01 [02] 03 >) com Azul Celeste #8DB9F0 */}
       {totalPages > 1 && (
         <div className="flex items-center justify-center gap-2 pt-6">
           <button

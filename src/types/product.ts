@@ -14,20 +14,40 @@ export interface EcoImpact {
 
 export interface ProductSeller {
   name: string;
+  handle?: string;    // @nome_do_brecho para identificar mesma sacolinha
   avatar?: string;
   city: string;
   state: string;
   rating: number;
   salesCount: number;
+  verified?: boolean; // Selo de verificado do brechó vendedor
 }
 
-export type ProductSize = 'PP' | 'P' | 'M' | 'G' | 'GG' | 'XGG' | 'Único';
+export type ProductSize = 
+  | 'PP' 
+  | 'P' 
+  | 'M' 
+  | 'G' 
+  | 'GG' 
+  | 'XGG' 
+  | 'Único'
+  | '34'
+  | '36'
+  | '38'
+  | '40'
+  | '42'
+  | '44'
+  | '46'
+  | string;
 
 export type ProductCondition = 
   | 'Novo com Etiqueta'
-  | 'Excelente / Sem Marcas'
-  | 'Vintage Curado'
-  | 'Bom Estado';
+  | 'Perfeito Estado'
+  | 'Gentilmente Usado'
+  | 'Vintage'
+  | 'Novo com etiqueta'
+  | 'Perfeito estado'
+  | 'Gentilmente usado';
 
 export interface Product {
   id: string;
@@ -50,6 +70,7 @@ export interface Product {
   measurements: ProductMeasurements;
   ecoImpact: EcoImpact;
   seller: ProductSeller;
+  styleVibe?: string; // Estilo/Vibe (ex: 'Y2K / Anos 2000', 'Minimalista Chic', etc.)
   isAvailable: boolean;
 }
 
@@ -64,8 +85,11 @@ export interface FilterState {
   minPrice: number;
   maxPrice: number;
   size: string;
+  condition?: string;
+  styleVibe?: string;
   color: string;
   brand: string;
   searchQuery: string;
-  sortBy: 'featured' | 'price-asc' | 'price-desc' | 'newest';
+  sortBy: 'featured' | 'price-asc' | 'price-desc' | 'newest' | 'eco-water';
 }
+
